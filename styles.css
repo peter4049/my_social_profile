@@ -1,0 +1,124 @@
+@font-face {
+    font-family: 'Inter';
+    src: local('Inter'),
+        url('assets/fonts/Inter-Regular.woff2') format('woff2'),
+        url('assets/fonts/Inter-Regular.woff') format('woff');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: local('Inter'),
+        url('assets/fonts/Inter-SemiBold.woff2') format('woff2'),
+        url('assets/fonts/Inter-SemiBold.woff') format('woff');
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: local('Inter'),
+        url('assets/fonts/Inter-Bold.woff2') format('woff2'),
+        url('assets/fonts/Inter-Bold.woff') format('woff');
+    font-weight: 700;
+}
+
+:root {
+    --clr-Green: hsl(75, 94%, 57%);
+    --clr-Grey: hsl(0, 0%, 20%);
+    --clr-White: hsl(0, 0%, 100%);
+    --clr-Dark-Grey: hsl(0, 0%, 12%);
+    --clr-Off-Black: hsl(0, 0%, 8%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+}
+
+/* MAIN STYLES */
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--clr-Off-Black);
+    color: var(--clr-White);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+
+main {
+    background-color: darkgrey;
+    text-align: center;
+    border-radius: 10px;
+    margin-inline: auto;
+    flex-basis: 350px;
+    padding: 2rem;
+}
+
+
+img {
+    border-radius: 50%;
+    width: 100px;
+}
+
+h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 1rem;
+}
+
+address {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: normal;
+    color: var(--clr-Green);
+    margin-block: .5rem 1.5rem;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+ul {
+    margin-top: 1.5rem;
+}
+
+li {
+    background-color: darkblue;
+    border-radius: 7px;
+    font-weight: 600;
+    transition: all ease-in 200ms;
+    margin-block: .9rem;
+}
+
+li:hover {
+    background-color: var(--clr-Green);
+    color: var(--clr-Off-Black);
+}
+
+a {
+    padding-block: .7rem;
+}
+
+a:hover {
+    cursor: url('assets/images/cursor.png'), pointer;
+}
+
+/*MEDIA QUERY*/
+
+@media (max-width:350px) {
+    main {
+        flex-basis: 90%;
+        padding: 1rem;
+    }
+}
